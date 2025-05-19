@@ -6,6 +6,7 @@ UV_CONFIG_FILE=custom-uv.toml uv add polars
 ```
 
 ```sh
-UV_CONFIG_FILE=custom-uv.toml uv sync --refresh --no-ca
-che
+UV_CONFIG_FILE=custom-uv.toml uv sync --refresh --no-cache
 ```
+
+Polars is retrieved from the default PyPi index, implicitly injected by the presene of a `uv.toml` config file. See `uv.lock`.
